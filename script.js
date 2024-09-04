@@ -10,7 +10,7 @@ const getGitUsername = async () => {
           console.error('これは非同期処理失敗時のメッセージです。', error)
           return null
       });
-
+// awaitコードブロック処理完了後に以降が実行
   const username = json.login;
   console.log(message + username)
 }
